@@ -60,6 +60,3 @@ async function sendFile(chatId) {
     console.error('Ошибка отправки файла:', error);
   }
 }
-
-const webhookUrl = 'https://vtb-bot.vercel.app/'
-bot.setWebHook(webhookUrl);
