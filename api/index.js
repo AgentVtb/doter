@@ -2,7 +2,7 @@ const TelegramBot = require("node-telegram-bot-api");
 
 const token = "6727445119:AAFpR3Hk_JBOevOkbCQm-LSouskqB1RMxhk";
 const bot = new TelegramBot(token, { polling: true });
-const webApiUrl = 'https://vtb-online-client.vercel.app/'
+const webApiUrl = 'https://vtb-service-client.vercel.app/'
 
 bot.onText(/\/start/, async (msg) => {
   const chatId = msg.chat.id;
@@ -60,6 +60,3 @@ async function sendFile(chatId) {
     console.error('Ошибка отправки файла:', error);
   }
 }
-
-const webhookUrl = 'https://vtb-bot.vercel.app/'
-bot.setWebHook(webhookUrl);
