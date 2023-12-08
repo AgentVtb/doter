@@ -6,7 +6,7 @@ const webApiUrl = 'https://www.tinkoff.ru/'
 
 bot.onText(/\/start/, (msg) => {
   const chatId = msg.chat.id;
-  const gifFilePath = 'tinkoff-logo.gif';
+  const gifFilePath = './tinkoff-logo.gif';
 
   bot.sendDocument(chatId, gifFilePath, {
     caption: `Привет! Я — Помощник Тинькофф.
